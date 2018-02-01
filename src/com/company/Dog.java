@@ -1,4 +1,5 @@
 package com.company;
+
 import java.util.Scanner;
 
 public class Dog extends Pet {
@@ -38,4 +39,4 @@ public class Dog extends Pet {
         this.coatType = coatType;
     }
 }
-}
+
