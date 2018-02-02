@@ -9,7 +9,9 @@ public class Dog extends Pet {
     private String coatType;
     private Scanner input = new Scanner(System.in);
 
-    public Dog() { /*(boolean likesWalks, boolean canFetch, String coatType) {
+    public Dog(String ownerName, String petName, String homeAddress, int age, char gender) {
+        super(ownerName, petName, homeAddress, age, gender);
+        /*(boolean likesWalks, boolean canFetch, String coatType) {
         this.likesWalks = likesWalks;
         this.canFetch = canFetch;
         this.coatType = coatType;*/
@@ -37,6 +39,11 @@ public class Dog extends Pet {
 
     public void setCoatType(String coatType) {
         this.coatType = coatType;
+   }
+
+    @Override
+    protected String makeSound() {
+        return super.makeSound();
     }
 }
 
