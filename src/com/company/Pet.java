@@ -10,7 +10,8 @@ public class Pet {
     private String petNoise;
     private String noise;
 
-    public Pet(String ownerName, String petName, String homeAddress, int age, char gender) {|]        this.ownerName = ownerName;
+    public Pet(String ownerName, String petName, String homeAddress, int age, char gender) {
+        this.ownerName = ownerName;
         this.petName = petName;
         this.homeAddress = homeAddress;
         this.age = age;
@@ -56,6 +57,7 @@ public class Pet {
     public void setGender(char gender) {
         this.gender = gender;
     }
+
     protected String makeSound() {
         return "Pets make no sound";
     }
