@@ -7,8 +7,6 @@ public class Pet {
     private String homeAddress;
     private int age;
     private char gender;
-    private String petNoise;
-    private String noise;
 
     public Pet(String ownerName, String petName, String homeAddress, int age, char gender) {
         this.ownerName = ownerName;
@@ -59,9 +57,7 @@ public class Pet {
     }
 
     protected String makeSound() {
-        return "Pets make no sound";
+
+        return "Pets make no sound.";
     }
-
 }
-
-

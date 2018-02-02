@@ -11,11 +11,14 @@ public class Dog extends Pet {
 
     public Dog(String ownerName, String petName, String homeAddress, int age, char gender) {
         super(ownerName, petName, homeAddress, age, gender);
-        /*(boolean likesWalks, boolean canFetch, String coatType) {
-        this.likesWalks = likesWalks;
-        this.canFetch = canFetch;
-        this.coatType = coatType;*/
     }
+
+    //    public Dog() {
+//        System.out.println("What is your dog's name?");
+//        setPetName(input.nextLine());
+//        System.out.println("Does " + getPetName() + " like to take walks? True or False");
+//        setLikesWalks(input.nextBoolean());
+//    }
 
     public boolean isLikesWalks() {
         return likesWalks;
@@ -39,11 +42,10 @@ public class Dog extends Pet {
 
     public void setCoatType(String coatType) {
         this.coatType = coatType;
-   }
+    }
 
     @Override
     protected String makeSound() {
-        return super.makeSound();
+        return super.makeSound() + "BUT dogs bark";
     }
 }
-
