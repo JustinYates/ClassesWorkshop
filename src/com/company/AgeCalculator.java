@@ -19,7 +19,7 @@ public class AgeCalculator extends Cat {
         String type = petType.nextLine();
 
 
-        System.out.print("okay so your " + type + " is " + humanAge + " years old in human years??, nice, let me tell you how old it REALLY is.");
+        System.out.print("okay so your " + type + " is only " + humanAge + " years old in human years??, nice, let me tell you how old it REALLY is.");
         int CatAge = ((humanAge - 2) * 4 + 24 );
         System.out.println(CatAge);
 
